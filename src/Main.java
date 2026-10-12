@@ -3,9 +3,9 @@
 public class Main {
     public static void main(String[] args) {
         System.out.println("Задача 1.");
-        int AgeEvgeniy = 26;
-        if (AgeEvgeniy >= 18) {
-            System.out.println("Если возраст человека равен " + AgeEvgeniy + ", то он совершеннолетний");
+        int ageEvgeniy = 26;
+        if (ageEvgeniy >= 18) {
+            System.out.println("Если возраст человека равен " + ageEvgeniy + ", то он совершеннолетний");
         } else {
             System.out.println("Ты не достиг совершеннолетия, нужно немного подождать");
         }
@@ -24,26 +24,28 @@ public class Main {
             System.out.println("Если скорость " + speed + ", то можно ездить спокойно");
         }
         System.out.println("Задача 4.");
-        int age = 26;
-        if (age >= 2 && age < 7) {
-            System.out.println("Если человеку от 2 до 6 лет, то ему нужно ходить в детский сад");
+        int age = 5;
+        if (age >= 2 && age <= 6) {
+            System.out.println("Если возраст человека " + age + " лет, то ему нужно ходить в детский сад");
         }
-        if (age >= 7 && age < 18) {
-            System.out.println("Если возраст человека от 7 до 17 лет, то ему нужно ходить в школу");
+        if (age >= 7 && age <= 17) {
+            System.out.println("Если возраст человека " + age + " лет, то ему нужно ходить в школу");
         }
         if (age >= 18 && age <= 24) {
-            System.out.println("Если возраст человека от 18 до 24 лет, то ему нужно ходить в университет");
-        } else {
-            System.out.println("Если возраст человека более 24 лет, то ему нужно ходить на работу");
+            System.out.println("Если возраст человека " + age + " лет, то ему нужно ходить в университет");
+        }
+        if (age > 24) {
+            System.out.println("Если возраст человека " + age + " лет, то ему нужно ходить на работу"); }
             System.out.println("Задача 5.");
             int ageA = 9;
             if (ageA < 5) {
-                System.out.println("Если возраст ребенка " + ageA + ", то он не может кататься на аттракционе");
+                System.out.println("Если возраст ребенка " + ageA + " лет, то он не может кататься на аттракционе");
             }
             if (ageA >= 5 && ageA <= 14) {
-                System.out.println("Если возраст ребенка равен " + ageA + ", то он может кататься в сопровождении взрослого");
-            } else {
-                System.out.println("Если возраст ребенка равен" + ageA + ", то ему можно кататься без сопровождения взрослого");
+                System.out.println("Если возраст ребенка равен " + ageA + " лет, то он может кататься в сопровождении взрослого");
+            }
+            if (ageA > 14) {
+                System.out.println("Если возраст ребенка равен" + ageA + " лет, то ему можно кататься без сопровождения взрослого");
             }
             System.out.println("Задача 6");
             int quantity = 100;
@@ -59,14 +61,14 @@ public class Main {
             int one = 1;
             int two = 2;
             int three = 3;
-            if (one > two) {
+            if (one > two && one > three) {
                 System.out.println("Переменная " + one + " наибольшее значение");
             }
-            if (three > two && three > one) {
-                System.out.println("Переменная " + three + " наибольшее значение");
-            } else {
+            if (two > three && two > one) {
                 System.out.println("Переменная " + two + " наибольшее значение");
+            }
+            if (three > two && three > one){
+                System.out.println("Переменная " + three + " наибольшее значение");
             }
         }
     }
-}
